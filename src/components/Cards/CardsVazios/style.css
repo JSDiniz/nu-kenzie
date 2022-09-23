@@ -1,0 +1,60 @@
+.cardsVazios {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.688rem;
+
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.875rem;
+
+  color: var(--Grey-4);
+}
+
+.cardsVazios__left {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardsVazios__left div button {
+  width: 87px;
+  height: 40px;
+  margin-right: 1rem;
+
+  border: 1.4px solid transparent;
+  border-radius: 8px;
+
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.188rem;
+
+  cursor: pointer;
+}
+
+.cardsVazios__left div button:hover {
+  color: var(--white);
+  background-color: var(--colorPrimary);
+  border: 1.4px solid var(--colorPrimary);
+}
+
+.cardsVazios__left div button:last-child {
+  margin-right: 0;
+}
+
+.cardsVazios__right {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.688rem;
+}
+
+.cardsVazios__right h6 {
+  font-weight: 700;
+  font-size: 1.375rem;
+  line-height: 2.125rem;
+}
