@@ -1,0 +1,116 @@
+.form {
+  width: 363px;
+  height: 351px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+
+  color: var(--Grey-4);
+
+  border: 1px solid var(--Grey-2);
+  border-radius: 8px;
+  box-sizing: border-box;
+
+  padding: 2rem;
+}
+
+.form h6 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.375rem;
+
+  color: var(--Grey-4);
+}
+
+.form__Descricao {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.form__Descricao input {
+  width: 100%;
+  height: 50px;
+
+  border: 2px solid var(--Grey-1);
+  border-radius: 8px;
+  box-sizing: border-box;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+
+  /* color: var(--Grey-3); */
+  background-color: var(--Grey-1);
+
+  /* border: 2px solid var(--Grey-1); */
+
+  padding: 0px 16px;
+}
+
+.form__Descricao span {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+
+  color: var(--Grey-3);
+}
+
+.form__informacao {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form__informacao .valor,
+.tipoValor {
+  display: flex;
+  flex-direction: column;
+  gap: 0.563rem;
+}
+
+.form__informacao .valor input,
+.tipoValor select {
+  width: 120px;
+  height: 48px;
+
+  padding: 0px 16px;
+
+  border: 2px solid var(--Grey-1);
+  border-radius: 8px;
+  box-sizing: border-box;
+
+  color: var(--Grey-3);
+  background-color: var(--Grey-1);
+}
+
+.form__informacao .tipoValor select {
+  color: var(--Grey-4);
+}
+
+.form__btn {
+  width: 314px;
+  height: 48px;
+
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.188rem;
+
+  color: var(--white);
+  background-color: var(--colorPrimary);
+
+  border-radius: 8px;
+  border: 2px solid var(--colorPrimary);
+
+  cursor: pointer;
+}
+
+.form__btn:hover {
+  background-color: var(--colorPrimary1);
+}

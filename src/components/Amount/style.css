@@ -1,0 +1,36 @@
+.amount {
+  width: 363px;
+  height: 96px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  color: var(--Grey-4);
+
+  border: 1px solid var(--Grey-2);
+  border-radius: 8px;
+  box-sizing: border-box;
+
+  padding: 1.5rem;
+}
+
+.amount__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.875rem;
+}
+
+.amount__box span {
+  color: var(--colorPrimary);
+}
+
+.amount__p {
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.375rem;
+}
