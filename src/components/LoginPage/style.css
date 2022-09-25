@@ -133,9 +133,3 @@
     box-sizing: border-box;
   }
 }
-
-@media (max-height: 375px) {
-  .main {
-    margin: 2rem 0;
-  }
-}
