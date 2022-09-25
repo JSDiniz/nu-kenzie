@@ -1,13 +1,12 @@
-body {
-  background-color: var(--Grey-4);
-}
 .main {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  background-color: var(--Grey-4);
 }
 
 .main__left {
@@ -19,6 +18,20 @@ body {
   color: var(--white);
 
   margin-right: 20px;
+
+  animation-name: animation1;
+  animation-duration: 1000ms;
+
+  position: relative;
+}
+
+@keyframes animation1 {
+  0% {
+    left: -500px;
+  }
+  100% {
+    left: 0;
+  }
 }
 
 .main__left h1 {
@@ -66,6 +79,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  animation-name: animation2;
+  animation-duration: 1000ms;
+
+  position: relative;
+}
+
+@keyframes animation2 {
+  0% {
+    right: -500px;
+  }
+  100% {
+    right: 0;
+  }
 }
 
 .main__right {
@@ -78,4 +105,37 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media (max-width: 892px) {
+  .main {
+    flex-direction: column;
+  }
+  .main__left {
+    margin-right: 0;
+    align-items: center;
+    text-align: center;
+  }
+  .main__right {
+    display: none;
+
+    transition: all 2000ms linear;
+  }
+}
+
+@media (max-width: 375px) {
+  .main__left p {
+    width: 100%;
+    transition: all 2000ms linear;
+
+    padding: 0 10px;
+
+    box-sizing: border-box;
+  }
+}
+
+@media (max-height: 375px) {
+  .main {
+    margin: 2rem 0;
+  }
 }

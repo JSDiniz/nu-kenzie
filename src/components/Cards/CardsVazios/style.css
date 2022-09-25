@@ -1,6 +1,5 @@
 .cardsVazios {
   width: 100%;
-
   display: flex;
   flex-direction: column;
   gap: 1.688rem;
@@ -10,6 +9,8 @@
   line-height: 1.875rem;
 
   color: var(--Grey-4);
+
+  box-sizing: border-box;
 }
 
 .cardsVazios__left {
@@ -17,6 +18,15 @@
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.cardsVazios__left h6 {
+  margin-right: 10px;
+}
+
+.cardsVazios__left > div {
+  display: flex;
   align-items: center;
 }
 
@@ -57,4 +67,30 @@
   font-weight: 700;
   font-size: 1.375rem;
   line-height: 2.125rem;
+}
+
+.cardsVazios__right img {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .cardsVazios__left {
+    justify-content: unset;
+    align-items: unset;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .cardsVazios__left > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cardsVazios__left div button {
+    width: 100%;
+    margin-right: 0;
+  }
 }

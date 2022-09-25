@@ -1,4 +1,4 @@
-import "./style.css";
+import "./styl.css";
 
 import { useState, useEffect } from "react";
 

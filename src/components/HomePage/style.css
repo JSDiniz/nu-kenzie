@@ -4,6 +4,18 @@
 
   color: var(--Grey-4);
   background-color: var(--white);
+
+  animation-name: animation;
+  animation-duration: 2000ms;
+}
+
+@keyframes animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .box header {
@@ -70,4 +82,45 @@
 
 .box__main__cards {
   width: 100%;
+}
+
+@media (max-width: 960px) {
+  .box__header {
+    width: 90%;
+  }
+
+  .box__main {
+    width: 90%;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .box {
+    height: unset;
+  }
+
+  .box__header {
+    width: 80%;
+  }
+
+  .box__main {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+
+  .box__main__cards {
+    margin-bottom: 2.438rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .box__header {
+    width: 90%;
+  }
+
+  .box__main {
+    width: 90%;
+  }
 }
