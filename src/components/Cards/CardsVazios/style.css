@@ -71,9 +71,21 @@
 
 .cardsVazios__right img {
   width: 100%;
+
+  animation-name: anim;
+  animation-duration: 1s;
 }
 
-@media (max-width: 1024px) {
+@keyframes anim {
+  0% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@media (max-width: 1125px) {
   .cardsVazios__left {
     justify-content: unset;
     align-items: unset;

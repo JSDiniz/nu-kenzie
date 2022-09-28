@@ -1,5 +1,5 @@
 import "./style.css";
-import img from "../img/Group 262.png";
+import img from "../Assets/img/Group 262.png";
 
 function LoginPage({ setlogin }) {
   return (
