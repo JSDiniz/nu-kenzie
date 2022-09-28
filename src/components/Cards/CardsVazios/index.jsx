@@ -1,6 +1,6 @@
 import "./style.css";
 
-import img from "../../img/NoCard.png";
+import img from "../../Assets/img/NoCard.png";
 
 function CardsVazios() {
   return (

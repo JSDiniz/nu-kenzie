@@ -10,9 +10,11 @@ function FormPage({ setListTransactions }) {
     event.preventDefault();
 
     const arrayNovo = {
-      id: Math.random().toString(36).substr(2, 9),
+      id: Math.random().toString(32).substr(2, 9),
       descricao: inputDescricao,
-      valor: inputNumber,
+      valor: inputNumber.includes("-")
+        ? inputNumber.replace("-", "")
+        : inputNumber,
       tipo: selectOption,
     };
 
