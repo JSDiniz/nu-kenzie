@@ -88,6 +88,20 @@
   background-color: var(--Grey-1);
 }
 
+/* .cardsIntems__button li {
+  animation-name: anims;
+  animation-duration: 1s;
+}
+
+@keyframes anims {
+  0% {
+    transform: translateX(300px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+} */
+
 .cardsIntems__button li section {
   width: 100%;
 
@@ -131,7 +145,7 @@
 
   cursor: pointer;
 
-  background-image: url(../../img/trash.png);
+  background-image: url(../../Assets/img/trash.png);
   background-repeat: no-repeat;
   background-size: initial;
   background-position: center;
@@ -139,7 +153,7 @@
 
 .cardsIntems__button li section button:hover {
   background-color: var(--Grey-4);
-  background-image: url(../../img/trash_hove.png);
+  background-image: url(../../Assets/img/trash_hove.png);
   background-repeat: no-repeat;
   background-size: initial;
   background-position: center;
@@ -155,7 +169,7 @@
   text-transform: uppercase;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1125px) {
   .cardsIntems__top {
     justify-content: unset;
     align-items: unset;
