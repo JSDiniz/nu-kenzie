@@ -85,7 +85,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1125px) {
   .cardsVazios__left {
     justify-content: unset;
     align-items: unset;
